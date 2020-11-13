@@ -1,8 +1,4 @@
-let myName = 'Del'
-document.write(myName);
-myName = 'Delwing Manzueta';
-document.write(myName);
+let pokemonName = 'Bulbasaur';
+let pokemonList = [
 
-
-alert('Hello World');
-
+];
