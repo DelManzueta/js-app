@@ -1,5 +1,3 @@
-var pokemonList = [];
-
 let pokemon1 = {
     name: 'Bulbasaur',
     height: 0.7,
@@ -37,3 +35,15 @@ var pokemonList = [
     pokemon4,
     pokemon5
 ];
+
+
+var pokemonList = {
+    pokemon1: 'Bulbasaur',
+    pokemon2: 'Ivysaur',
+    pokemon3: 'Venusaur',
+    pokemon4: 'Charmander',
+    pokemon5: 'Charmeleon',
+};
+for (var pokemonName in pokemonList) {
+    document.write(pokemonName + " : " + pokemonList[pokemonName])
+}
