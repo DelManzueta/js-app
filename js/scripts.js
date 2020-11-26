@@ -36,14 +36,8 @@ var pokemonList = [
     pokemon5
 ];
 
-
-var pokemonList = {
-    pokemon1: 'Bulbasaur',
-    pokemon2: 'Ivysaur',
-    pokemon3: 'Venusaur',
-    pokemon4: 'Charmander',
-    pokemon5: 'Charmeleon',
-};
-for (var pokemonName in pokemonList) {
-    document.write(pokemonName + " : " + pokemonList[pokemonName])
+for (var pokemon in pokemonList) {
+    document.write("Name: " + pokemonList[pokemon].name + " | " + "Height: " + pokemonList[pokemon].height + "</br>")
 }
+
+//updated for loop 
