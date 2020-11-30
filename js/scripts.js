@@ -28,16 +28,45 @@ let pokemon5 = {
     types: ['fire']
 }
 
+let pokemon6 = {
+    name: 'Charizard',
+    height: 1.7,
+    types: ['fire', 'flying']
+}
+
+let pokemon7 = {
+    name: 'Squirtle',
+    height: 0.5,
+    types: ['water']
+}
+
+let pokemon8 = {
+    name: 'Wartortle',
+    height: 1,
+    types: ['water']
+}
+
+let pokemon9 = {
+    name: 'Balstoise',
+    height: 1.6,
+    types: ['water']
+}
+
 var pokemonList = [
     pokemon1,
     pokemon2,
     pokemon3,
     pokemon4,
-    pokemon5
+    pokemon5,
+    pokemon6,
+    pokemon7,
+    pokemon8,
+    pokemon9
 ];
+
 
 for (var pokemon in pokemonList) {
     document.write("Name: " + pokemonList[pokemon].name + " | " + "Height: " + pokemonList[pokemon].height + "</br>")
 }
 
-//updated for loop 
+//added more pokemon characters to list
