@@ -31,7 +31,7 @@ let pokemon5 = {
 let pokemon6 = {
     name: 'Charizard',
     height: 1.7,
-    types: ['fire', 'flying']
+    types: ['fire' , 'flying']
 }
 
 let pokemon7 = {
@@ -66,7 +66,8 @@ var pokemonList = [
 
 
 for (var pokemon in pokemonList) {
-    document.write("Name: " + pokemonList[pokemon].name + " | " + "Height: " + pokemonList[pokemon].height + "</br>")
+    document.write('<h3>Name: </h3>' + '<p>' + pokemonList[pokemon].name + ' </p> ' + ' <p>Height:' + pokemonList[pokemon].height + ' </p> ' + '<p>Types: ' + pokemonList[pokemon].types + '</p>')
+    
 }
 
 //added more pokemon characters to list
