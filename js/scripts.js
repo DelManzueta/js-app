@@ -65,9 +65,9 @@ var pokemonList = [
 ];
 
 
-for (var pokemon in pokemonList) {
-    document.write('<h3>Name: </h3>' + '<p>' + pokemonList[pokemon].name + ' </p> ' + ' <p>Height:' + pokemonList[pokemon].height + ' </p> ' + '<p>Types: ' + pokemonList[pokemon].types + '</p>')
+// for (var pokemon in pokemonList) {
+//     document.write('<h3>Name: </h3>' + '<p>' + pokemonList[pokemon].name + ' </p> ' + ' <p>Height:' + pokemonList[pokemon].height + ' </p> ' + '<p>Types: ' + pokemonList[pokemon].types + '</p>')
     
-}
+// }
 
 //added more pokemon characters to list
