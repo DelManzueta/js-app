@@ -56,18 +56,16 @@ var pokemonRepository = (function (pokemonArray) {
         },
     ];
 
-    function getAll() {
-        return pokemonList;
-    }
-
     function add(pokemon) {
-        pokemonList.push(pokemon);
+        pokemonList.push(pokemon)
     }
-
+    function getAll(){
+        return pokemonList
+    }
     return {
-        getAll: getAll,
-        add: add
-    }
+        add: add,
+        getAll: getAll
+    };
 
 })();
 
