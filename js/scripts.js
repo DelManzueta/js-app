@@ -1,5 +1,5 @@
 var pokemonRepository = (function () {
-    let pokemonList = [
+    var pokemonList = [
         {
             name: 'Bulbasaur',
             height: 0.7,
@@ -70,8 +70,6 @@ var pokemonRepository = (function () {
 
 
 
-
-
-pokemonRepository.getAll().forEach(function (pokemon) {
-    document.write('<p><strong>Name: </strong></p> ' + '<p>' + pokemon.name + '<br />' + '[Height: ' + pokemon.height + ']' + '<br>' + '[Types: ' + pokemon.types + ']' + '</p>');
+pokemonRepository.getAll().forEach(function (pokemonObjects) {
+    document.write('<p><strong>Name: </strong></p> ' + '<p>' + pokemonObjects.name + '<br />' + '[Height: ' + pokemonObjects.height + ']' + '<br>' + '[Types: ' + pokemonObjects.types + ']' + '</p>');
 });
