@@ -1,4 +1,4 @@
-var pokemonRepository = (function (pokemonArray) {
+var pokemonRepository = (function () {
     let pokemonList = [
         {
             name: 'Bulbasaur',
@@ -57,25 +57,18 @@ var pokemonRepository = (function (pokemonArray) {
     ];
 
     function add(pokemon) {
-        pokemonList.push(pokemon)
+        pokemonList.push(pokemon);
     }
-    function getAll(){
+    function getAll() {
         return pokemonList
     }
     return {
         add: add,
         getAll: getAll
     };
-
 })();
 
+console.log(pokemonRepository);
 
 
 
-
-/*
-pokemonRepository.forEach(function (pokemonType) {
-    document.write('<p><strong>Name: </strong></p> ' + '<p>' + pokemonType.name + '<br />' + '[Height: ' + pokemonType.height + ']' + '<br>' + '[Types: ' + pokemonType.types + ']' + '</p>');
-
-});
- */
