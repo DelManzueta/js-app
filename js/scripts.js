@@ -72,9 +72,12 @@ var pokemonRepository = (function () {
 pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] });
 
 
-
 pokemonRepository.getAll().forEach(function (pokemonObjects) {
-    document.write('<p><strong>Name: </strong></p> ' + '<p>' + pokemonObjects.name + '<br />' + '[Height: ' + pokemonObjects.height + ']' + '<br>' + '[Types: ' + pokemonObjects.types + ']' + '</p>');
+    document.write('<p><strong>Name: </strong></p> ' + '<p>' + pokemonObjects.name + '<br />' + '[Height: ' + pokemonObjects.height + ']' + '<br>' + '[Types: ' + pokemonObjects.types + ']' + '</p><br>'
+    );
 });
 
 
+Object.keys(pokemonRepository).forEach(function (getAll) {
+    console.log(pokemonRepository.getAll(getAll));
+});
