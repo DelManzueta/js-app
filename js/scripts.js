@@ -1,5 +1,5 @@
 var pokemonRepository = (function () {
-    var pokemonList = [
+    var repository = [
         {
             name: 'Bulbasaur',
             height: 0.7,
@@ -57,16 +57,12 @@ var pokemonRepository = (function () {
     ];
 
     function add(pokemon) {
-        pokemonList.push(pokemon);
+        repository.push(pokemon);
     }
     function getAll() {
-        return pokemonList;
+        return repository;
     }
     function addListItem(pokemon) {
-        let ulPokemon = document.querySelector('ul');
-        let listItem = document.createElement('li');
-        let button = document.createElement('button');
-        button.innerText = pokemonList.name;
     }
     return {
         add: add,

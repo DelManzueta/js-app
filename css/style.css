@@ -3,9 +3,11 @@ ul {
 }
 
 .btn {
-  background-color: red;
-  padding: 10px;
+  background-color: red; 
   border: 2px solid black;
   color: white;
   width: 200px;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 10px 0;
 }
