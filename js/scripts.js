@@ -58,8 +58,7 @@ var pokemonRepository = (function () {
 
     function add(pokemon) {
         repository.push(pokemon);
-    }
- 
+    } 
     function getAll() {
         return repository;
     }
@@ -77,25 +76,11 @@ var pokemonRepository = (function () {
         getAll: getAll,
         addListItem: addListItem
     };
-})();
+})(); 
 
-
-
-console.log(pokemonRepository.getAll());
-pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] });
-console.log(pokemonRepository.getAll());
-
-
-
+pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] }); 
 pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
 });
-
  
-
-/*
-Object.keys(pokemonRepository).forEach(function (getAll) {
-    console.log(pokemonRepository.getAll(getAll));
-});
-*/
 
