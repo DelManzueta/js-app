@@ -60,6 +60,7 @@ var pokemonRepository = (function () {
         repository.push(pokemon);
     }
     function showDetails(pokemon) {
+        console.log('showDetails ~ pokemon', pokemon)
     }
     function getAll() {
         return repository;
@@ -75,6 +76,7 @@ var pokemonRepository = (function () {
         //
         button.addEventListener('click', function (pokemon) {
             let pokemonTarget = pokemon.pokemonTarget;
+            showDetails(pokemon);
         });
         // 
     }
