@@ -59,9 +59,9 @@ var pokemonRepository = (function () {
     function add(pokemon) {
         repository.push(pokemon);
     }
-    function showDetails(pokemon) {
-        console.log('showDetails ~ pokemon', pokemon)
-    }
+    function showDetails(pokemon){
+      console.log('showDetails ~ pokemon', pokemon)
+    } 
     function getAll() {
         return repository;
     }
@@ -74,9 +74,9 @@ var pokemonRepository = (function () {
         listPokemon.appendChild(button);
         newList.appendChild(listPokemon);
         //
-        button.addEventListener('click', function (pokemon) {
-            let pokemonTarget = pokemon.pokemonTarget;
-            showDetails(pokemon);
+        button.addEventListener('click', function(pokemon){
+          let pokemonTarget = pokemon.pokemonTarget; 
+          showDetails(pokemon);
         });
         // 
     }
@@ -86,10 +86,20 @@ var pokemonRepository = (function () {
         addListItem: addListItem,
         showDetails: showDetails
     };
-})();
+})(); 
 
-pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] });
+// pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] }); 
+
+
+const newPokemon = {
+  name: 'Pikachu',
+  height: 1.04,
+  types: ['electric']
+}
+const addObjToRepo = (value, callback) => callback(value)
+addObjToRepo(newPokemon, pokemonRepository.add)
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addListItem(pokemon);
+    pokemonRepository.addListItem(pokemon); 
 });
+  
