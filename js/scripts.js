@@ -1,5 +1,5 @@
 var pokemonRepository = (function () {
-    let pokemonRepo = [];
+    let pokemonList = [];
 
     let pokemonApi = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
@@ -10,20 +10,20 @@ var pokemonRepository = (function () {
             'height' in pokemon &&
             'types' in pokemon
         ) {
-            pokemonRepo.push(pokemon);
+            pokemonList.push(pokemon);
         } else {
             console.log('pokemon is not correct')
         }
     }
 
     function add(pokemon) {
-        pokemonRepo.push(pokemon);
+        pokemonList.push(pokemon);
     }
     function showDetails(pokemon) {
         console.log('showDetails ~ pokemon', pokemon)
     }
     function getAll() {
-        return pokemonRepo;
+        return pokemonList;
     }
 
     function addListItem(pokemon) {
