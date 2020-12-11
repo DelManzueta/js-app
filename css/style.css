@@ -2,7 +2,7 @@ ul {
   list-style: none;
 }
 
-.btns {
+.btn-style {
   background-color: red; 
   border: 2px solid black;
   color: white;
@@ -12,6 +12,6 @@ ul {
   margin: 10px 0;
 }
 
-.btns:hover {
+.btn-style:hover {
   cursor: pointer;
 }
