@@ -4,6 +4,19 @@ var pokemonRepository = (function () {
     let pokemonApi = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
     function add(pokemon) {
+        if (
+            typeof pokemon === 'object' &&
+            'name' in pokemon &&
+            'height' in pokemon &&
+            'types' in pokemon
+        ) {
+            pokemonRepo.push(pokemon);
+        } else {
+            console.log('pokemon is not correct')
+        }
+    }
+
+    function add(pokemon) {
         pokemonRepo.push(pokemon);
     }
     function showDetails(pokemon) {
@@ -12,6 +25,7 @@ var pokemonRepository = (function () {
     function getAll() {
         return pokemonRepo;
     }
+
     function addListItem(pokemon) {
         let newList = document.querySelector('.pokemon-list');
         let listPokemon = document.createElement('li');
@@ -53,7 +67,7 @@ var pokemonRepository = (function () {
 
 // pokemonRepository.add({ name: 'Pikachu', height: 1.04, types: ['electric'] }); 
 
-/*
+
 const newPokemon = {
     name: 'Pikachu',
     height: 1.04,
@@ -61,7 +75,6 @@ const newPokemon = {
 }
 const addObjToRepo = (value, callback) => callback(value)
 addObjToRepo(newPokemon, pokemonRepository.add)
-*/
 
 function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
