@@ -18,7 +18,7 @@ let pokemonRepository = (function () {
         console.log('showDetails ~ pokemon', pokemon)
       }
     */
-    function showModal(name, height) {
+    function showModal(pokemon) {
         modalContainer.innerHTML = '';
 
         let modal = document.createElement('div');
@@ -30,10 +30,10 @@ let pokemonRepository = (function () {
         closeButtonElement.addEventListener('click', hideModal)
 
         let pokemonTitle = document.createElement('h1');
-        pokemonTitle.innerText = name;
+        pokemonTitle.innerText = pokemon.name;
 
         let pokemonInfo = document.createElement('p');
-        pokemonInfo.innerText = height;
+        pokemonInfo.innerText = pokemon.height;
 
         modal.appendChild(closeButtonElement);
         modal.appendChild(pokemonTitle);

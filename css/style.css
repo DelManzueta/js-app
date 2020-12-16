@@ -14,7 +14,7 @@ ul {
   width: 200px;
   border-radius: 25px;
   padding: 15px;
-  margin: 10px 0;
+  margin: 10px 0; 
 }
 
 .btn-style:hover {
@@ -73,4 +73,6 @@ ul {
 #modal-container.is-visible {
   /* CSS for modal container - add your own desired CSS styles here */
   display: block;
+  width: 100%;
+  background-color: brown;
 }
