@@ -92,6 +92,8 @@ nav {
 
 /** additional css for pokemon list **/
 
-.pokemon_list ul {
+.pokemon_list ul,
+h1 {
     align-items: center;
+    text-align: center;
 }
