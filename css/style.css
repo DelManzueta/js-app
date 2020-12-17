@@ -1,6 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     text-transform: capitalize;
 }
 
@@ -86,4 +85,13 @@ nav {
     /* CSS for modal container - add your own desired CSS styles here */
     display: block;
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/** additional css for pokemon list **/
+
+.pokemon_list ul {
+    align-items: center;
 }
